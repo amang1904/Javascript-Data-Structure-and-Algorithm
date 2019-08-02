@@ -1,0 +1,23 @@
+function sort(data)
+{
+	for(var i=0; i<data.length-1 ; i++ )
+  {
+  	for(var j=0; j<data.length-1 ; j++)
+    {
+    	if(data[j] > data[j+1])
+      {
+      	var flag = data[j];
+        data[j] = data[j+1];
+        data[j+1] = flag;        
+      }
+    }
+  }
+}
+
+var data = [90,70,50,80,60,85,89];
+sort(data);
+console.log('*******************');
+for(var info of data)
+{
+	console.log(info);
+}
