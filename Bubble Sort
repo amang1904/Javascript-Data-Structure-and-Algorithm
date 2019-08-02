@@ -16,8 +16,7 @@ function sort(data)
 
 var data = [90,70,50,80,60,85,89];
 sort(data);
-console.log('*******************');
 for(var info of data)
 {
-	console.log(info);
+	document.write(info + ',');
 }
